@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:note_app/constants/toast.dart';
 import 'package:note_app/controller/firebase/firebaseManager.dart';
 import 'package:note_app/screens/home.dart';
+import 'package:note_app/screens/signup_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -138,7 +139,13 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(color: Colors.white),
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        CupertinoDialogRoute(
+                            builder: (_) => SignupScreen(), context: context),
+                      );
+                    },
                     child: const Text(
                       "SignUp",
                       style: TextStyle(

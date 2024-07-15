@@ -1,6 +1,4 @@
-import 'dart:developer';
 import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +6,6 @@ import 'package:intl/intl.dart';
 import 'package:note_app/constants/colors.dart';
 import 'package:note_app/constants/toast.dart';
 import 'package:note_app/controller/firebase/firebaseIntegration.dart';
-import 'package:note_app/controller/firebase/firebaseManager.dart';
 import 'package:note_app/controller/service/offline_note_helper.dart';
 import 'package:note_app/models/note.dart';
 import 'package:note_app/screens/edit.dart';
